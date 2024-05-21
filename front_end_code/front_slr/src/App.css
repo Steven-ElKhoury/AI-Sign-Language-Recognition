@@ -1,0 +1,215 @@
+.title {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/Ai.jpg');
+    background-size: cover;
+    background-position: center; 
+    color: white;
+    padding: 100px 20px 40px; 
+    text-align: center;
+    font-size: 36px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* Introduction */
+.intro {
+    padding: 40px;
+    text-align: center;
+    background-color: #f7f7f7; 
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-bottom: 40px; /* Add margin at the bottom for separation from the next section */
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Dark gray text color */
+}
+/* Benefits and Chart */
+.benefits-chart-container {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px; /* Add padding to the container */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-bottom: 20px; /* Add margin at the bottom for separation */
+}
+
+/* Style for the benefits section */
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add margin between benefits */
+}
+
+/* Style for individual benefit cards */
+.benefit {
+    flex: 1; /* Occupy available space */
+    text-align: center;
+    padding: 20px; /* Add padding to each benefit card */
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Style for the chart container */
+.chart-container {
+    margin-top: 20px; /* Add margin at the top for separation */
+}
+.benefit svg {
+    width: 80px; /* Adjust icon size as needed */
+    margin-bottom: 10px;
+    color: #3F51B5; /* Dark Blue, more AI theme */
+}
+
+/* Chart Container */
+.chart-container {
+    flex: 1; /* Occupy available space */
+    margin-top: 40px;
+}
+
+/* Button */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Predict Button */
+.predict-button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.predict-button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Match your button color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error {
+    color: #ff0000;
+}
+
+/* Data Box */
+.data-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+#modelSelect {
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Model Section */
+.model-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px; /* Add padding */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+/* Model Info Container */
+.model-info {
+    display: flex; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+/* Model Description */
+.model-description {
+    flex: 1; /* Take remaining space */
+    padding-right: 20px; /* Add spacing between description and image */
+}
+
+.model-description h2 {
+    margin-bottom: 10px; /* Add margin at the bottom of heading */
+}
+
+.model-description p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.6; /* Adjust line height */
+}
+
+/* Model Image */
+.model-image img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    background-color: #0056b3; /* Green, same as the button color */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: 2px solid #0056b3; /* Border same color as button background */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* White background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 2px solid #0056b3; /* Border same color as button background */
+    border-radius: 8px;
+    padding: 10px; /* Add padding */
+}
+
+/* Dropdown Content Links */
+.dropdown-content a {
+    color: #333; /* Dark gray text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown Content Links on Hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+}
+
+/* Show Dropdown Content on Hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
